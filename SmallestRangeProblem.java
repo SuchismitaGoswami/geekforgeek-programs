@@ -1,5 +1,3 @@
-// question: https://practice.geeksforgeeks.org/problems/find-smallest-range-containing-elements-from-k-lists/1
-
 // Java progrm to demonstrate working of priority queue in Java 
 import java.util.*; 
 import java.util.Comparator;
@@ -44,17 +42,16 @@ class Example
         Node root = pq.poll();
         min = root.data;
         if(range > max - min + 1 ){
-            System.out.print("Before ---  " + range +  " , " + min + " , " + max + " ---" );
             range = max - min + 1 ;
-            
-            System.out.println(" After ----  " + range +  " , " + min + " , " + max  + "---");
             start = min;
             end = max;
         }
+        if(range == k)
+        break ;
         
         if(root.nextColNo < n){   
         pq.add(new Node(arr[root.listNo][root.nextColNo],root.listNo,root.nextColNo + 1));
-        System.out.println("New elemnt added " + arr[root.listNo][root.nextColNo]);
+        // System.out.println("New elemnt added " + arr[root.listNo][root.nextColNo]);
             if(arr[root.listNo][root.nextColNo] > max){
                 max = arr[root.listNo][root.nextColNo];
             }
