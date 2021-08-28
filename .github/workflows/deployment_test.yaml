@@ -1,0 +1,15 @@
+name: app-insight-metrics
+
+on: [push, pull_request]
+
+jobs:
+  test-deployment:
+    runs-on: ubuntu-latest
+    environment: development
+   
+    steps:
+      - name: Deploy
+        run: |
+          echo "Test deployment"
+
+        
