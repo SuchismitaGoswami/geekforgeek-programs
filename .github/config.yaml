@@ -2,3 +2,4 @@ deployment:
   environment:
     excludes:
       - Test
+      - Terraform Plan
