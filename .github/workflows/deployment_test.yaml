@@ -10,6 +10,6 @@ jobs:
     steps:
       - name: Deploy
         run: |
-          echo "Testing deployment"
+          echo "Testing deployment info tracking"
 
         
