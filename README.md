@@ -1,2 +1,2 @@
 # geekforgeek-programs
-gfg  problem implementation
+GFG  problem implementation
