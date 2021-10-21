@@ -2,4 +2,4 @@ deployment:
   environment:
     excludes:
       - Test
-      - "Prod - Plan"
+      - Prod - Plan
