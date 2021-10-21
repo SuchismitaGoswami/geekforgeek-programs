@@ -5,7 +5,7 @@ on: [push, pull_request]
 jobs:
   test-deployment:
     runs-on: ubuntu-latest
-    environment: development
+    environment: Prod - Plan
    
     steps:
       - name: Deploy
