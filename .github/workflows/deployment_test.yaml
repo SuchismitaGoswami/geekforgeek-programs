@@ -11,5 +11,13 @@ jobs:
       - name: Deploy
         run: |
           echo "Testing deployment info tracking - test"
-
+          
+  prod-deployment:
+    runs-on: ubuntu-latest
+    environment: Prod - Plan 
+   
+    steps:
+      - name: Deploy
+        run: |
+          echo "Testing deployment info tracking - Prod - Plan "
         
