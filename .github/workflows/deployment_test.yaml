@@ -13,11 +13,16 @@ jobs:
           echo "Testing deployment info tracking - test"
           
   prod-deployment:
-    runs-on: ubuntu-latest
-    environment: Prod - Plan 
+    runs-on: ubuntu-latest 
    
     steps:
       - name: Deploy
         run: |
           echo "Testing deployment info tracking - Prod - Plan "
+          
+  call-workflow-2-in-local-repo:
+    uses: ./.github/workflows/reusable-workflow.yaml
+
+
+
         
