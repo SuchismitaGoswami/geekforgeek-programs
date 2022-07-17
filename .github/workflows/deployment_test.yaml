@@ -22,6 +22,8 @@ jobs:
           
   call-workflow-2-in-local-repo:
     uses: ./.github/workflows/reusable-workflow.yaml
+    with:
+      username: mona
 
 
 
