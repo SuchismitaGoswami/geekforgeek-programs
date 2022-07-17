@@ -14,4 +14,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
+          echo "ls -la"
+      - run: |
           cat README.md
